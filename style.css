@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap15 {
+    gap: 15px;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap0 {
+    gap: 0px;
+}
+.gap50 {
+    gap: 50px;
+}
+.gap40 {
+    gap: 40px;
+}
+
+.padding20 {
+    /* padding: 50px 30px; */
+}
+.padding0 {
+    padding: 0px;
+}
+
+.absolute {
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+.mobileMenu{
+    height: 100%;
+    width: 100%;
+    /* overflow-y: scroll; */
+}
+.card{
+    /* height: 680px; */
+    width:380px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 10px #d7d7d7;
+    padding-bottom: 10px;
+}
+.img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 0px 5px #ffffff2e;
+}
+.card{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+header{
+    color: white;
+    padding: 50px 20px;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -38px;
+    height: 350px ;
+    width: 500px;
+    background: rgb(134,156,218);
+    background: linear-gradient(149deg, rgba(134,156,218,1) 48%, rgba(73,111,215,1) 100%);  
+      border-radius: 0px 0px 0px 50px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+nav{
+    width: 100%;
+    margin-top: 40px;
+}
+.addBranch{
+    background-color: #628dfe;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid #628dfe;
+    box-shadow: 0px 16px 10px -16px black;
+    transition: all 0.3s ease-out;
+}
+.white{
+    color: white;
+}
+.addBranch:hover,.sendBtn:hover{
+    background-color: white;
+    color: black;
+}
+.addBranch:hover .white{
+    color: black;
+}
+.blueLine {
+    height: 70px;
+    width: 5px;
+    background-color: rgb(29 116 249);
+    border-radius: 0px 100px 100px 0px;
+    display: none;
+}
+
+.delete {
+    margin-right: 40px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.element {
+    /* cursor: pointer; */
+    height: 70px;
+}
+
+.element.active .blueLine {
+    display: flex;
+}
+
+.padding-left {
+    cursor: pointer;
+    padding-left: 45px;
+}
+.svg{
+    color: gray;
+}
+small{
+    font-size: 12px;
+    opacity: 0.8;
+}
+.inputField{
+    height: 200px;
+    width: 90%;
+    background-color: white;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 10;
+    display: none;
+    box-shadow: 0px 0px 0px 10px #d7d7d7;
+
+}
+#name{
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.sendBtn{
+    height: 40px;
+    width: 100px;
+    border: 2px solid #628dfe;
+    border-radius: 5px;
+    background-color: #628dfe;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+@media screen and (max-width:767px) {
+    .card{
+        height: auto;
+        margin: 15px;
+    }
+    .mobileMenu{
+        padding-top: 30px;
+        overflow-y: scroll;
+    }
+}
